@@ -1,0 +1,68 @@
+:root {
+  /* Nigerian palette */
+  --nigeria-green: #007a3d; /* deep green */
+  --nigeria-light-green: #009e4f; /* brighter green */
+  --nigeria-white: #ffffff;
+  --muted: #6b7280;
+}
+
+.site-footer {
+  padding: 1.25rem 0 2rem 0; /* extra bottom spacing */
+  position: relative; /* ensure normal flow */
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 1rem;
+  background: transparent;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #fff;
+  background: rgba(0,0,0,0.12);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.social-list {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--nigeria-white);
+  color: var(--nigeria-green);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  background: #f3f4f6;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
